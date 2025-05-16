@@ -244,7 +244,7 @@ Rather than calling ‘datasets’ for each site, you can use the
 discrete water quality parameters available at a given site (i.e., a
 subset of the Dataset file you created above). The display name is the
 name that you see in ‘Aquarius Springboard’ and is the required input
-for the AQMultiExtract function, e.g. Total Nitrogen = “TN”
+for the AQMultiExtract function, e.g. Total Nitrogen = “TN”
 
 ``` r
 # Create an object with all discrete WQ parameters at the site.
@@ -272,7 +272,7 @@ The syntax requirements for AQMultiExtractFlat are:
 - **start** - (optional) start date in the format YYYY-MM-DD.
 - **end** - (optional) end date in the format YYYY-MM-DD.
 
-In this case the sitelist is a list of one, i.e. SiteID, and the
+In this case the sitelist is a list of one, i.e. SiteID, and the
 paramlist is that above. We will analyse data between the 1st January
 2020 and the 1st January 2025.
 
@@ -329,7 +329,7 @@ WQData_Pongakawa %>%
 
 ![](R_Tutorial_2025_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
-This looks much better and we might want to save the filtered data as
+This looks much better and we might want to put the filtered data aside as
 ‘routine’ dataset.
 
 ``` r
@@ -350,7 +350,7 @@ WQData_Pongakawa %>%
 ![](R_Tutorial_2025_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
 
 ``` r
-# If we're happy with how this works then we can save it for future use.
+# If we're happy with how this works then we can put this aside for future use.
 Rec_Bathing_Data <- WQData_Pongakawa %>%
     filter(Parameter == "E coli (cfu/100ml)") %>%
     filter(Qualifiers == "Recreational")
