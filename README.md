@@ -26,7 +26,7 @@ This means that both tarball files should be in your project folder once
 you have downloaded today's lesson (by clicking on the green button and
 selecting 'Download ZIP').  
 
-**Run the following code to install aquarius2018 and BoPRC2025:**: 
+**Run the following code to install aquarius2018 and BoPRC2025:** 
 
 ```{r, message=FALSE,eval=FALSE}
 #for aquarius2018 
