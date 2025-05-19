@@ -15,37 +15,29 @@ These packages are only used by BOPRC and are therefore not publicly
 available. Therefore, installation is slightly different to packages
 stored in the CRAN repository.
 
-Both of these packages are stored on GitHub is an online platform for
-version control and collaboration, allowing developers to manage and
-share their code projects efficiently.
+Both of these packages are stored on GitHub - an online platform for 
+version control and collaboration, allowing developers to manage and 
+share their code projects efficiently.  
 
-You can easily download and install these packages by following the
-steps below:
+The compiled version of these packages can be downloaded as a tarball
+file (like a zip file) from the corresponding Github repositories, but
+have also been included in the 'BOPRC_R_Course_Lesson_2' repository.  
+This means that both tarball files should be in your project folder once
+you have downloaded today's lesson (by clicking on the green button and
+selecting 'Download ZIP').  
 
-1.  **Navigate to Github**: Click on the package names above (they are
-    hyperlinks).  
-2.  **Download**: Click on the green ‘Code’ button and then select
-    ‘Download ZIP’. Save this file in your active R project. Don’t
-    change the file name.
-3.  **Install devtools**: Click on ‘Install’ in the Packages tab. Make
-    sure CRAN is selected as the repository. Search for ‘devtools’ in
-    the packages box. Click install.
-4.  **Load devtools**: Run the following code:
+**Run the following code to install aquarius2018 and BoPRC2025:**: 
 
-``` r
-library(devtools)
-```
-
-4.  **Install the downloaded zip file**:
-
-``` r
+```{r, message=FALSE,eval=FALSE}
 #for aquarius2018 
-install_local("aquarius2018-main.zip")
+install.packages("aquarius2018_1.1.2.tar.gz", repos = NULL, type = "source")
+
 ```
 
-``` r
+```{r, message=FALSE,eval=FALSE}
 #for BoPRC2025
-install_local("BoPRC2025-main.zip")
+install.packages("BoPRC2025_0.2.0.tar.gz", repos = NULL, type = "source")
+
 ```
 
 Now you should be able to each package using the following commands:
@@ -55,11 +47,10 @@ library(aquarius2018)
 library(BoPRC2025)
 ```
 
-The other, publicly available, packages that we will use in this
+The other packages that we will use in this
 tutorial are:
 
 - **tidyverse**
-- **lubridate**
 
 Before attempting to install these packages, make sure your Primary CRAN
 Repository is set to:
